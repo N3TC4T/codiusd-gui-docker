@@ -1,0 +1,26 @@
+version: '2'
+services:
+  nginx:
+      container_name: Nginx
+      build: nginx
+      ports:
+          - "8000:8000"
+      depends_on:
+          - "app"
+      network_mode: host
+      environment:
+        - BASIC_AUTH_USERNAME=admin
+        - BASIC_AUTH_PASSWORD=codius
+        - PORT=8000
+
+  app:
+      container_name: APP
+      build: app
+      ports:
+        - "127.0.0.1:3300:3300"
+      volumes:
+            - /usr/share/app
+      environment:
+            - MODE=prod
+      network_mode: host
+
