@@ -89,10 +89,6 @@ At last, open the admin page with http://your-server-ip:8000
 
 and for `username` and `password` use `admin:codius` if you have't change it to something else .
 
-### Donations
-
-If you want to show your appreciation, you can donate via XRP to
-`rD1ioePTv7P1jgELM3tDkDU1LJqTEwuwo` :)
 
 ### Contact
 
